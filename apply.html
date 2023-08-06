@@ -117,7 +117,11 @@
             <div class="container">
                 <style>
                     label{
-                        font-weight: bold;
+                        /* font-weight: bold; */
+                        margin-bottom: 10px;
+                    }
+                    form .row{
+                        margin-top: 20px;
                     }
                 </style>
                 <div class="row">
@@ -127,188 +131,613 @@
                                 <h3 class>Registation</h3>
                             </div>
                             <div class="card-body">
-                                <form action="{{ route('volunteer_Store') }}"
-                                    method="POST" enctype="multipart/form-data"
-                                    class="tab-content">
+                                
+                                <form
+                                    action="https://panchbibipouro.com/citizen_application"
+                                    method="POST" enctype="multipart/form-data">
+                                    <input type="hidden" name="_token"
+                                        value="ZUDGWDzo3HXIechRxIfKz5gg0NF13M7zWuJc4Ilv">
+                                    <div class="row">
+                                        <div class="form-group col-md-8">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ছবি <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="file"
+                                                class="form-control"
+                                                name="photo"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder="Enter photo"
+                                                required>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    হোল্ডিং নং </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="holding_no"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Name
-                                                    (english)</label>
-                                                <input type="text" value
-                                                    name="name_en"
-                                                    class="form-control">
-                                            </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    এন আই ডি (ইংরেজিতে) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control" name="nid"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
                                         </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Name
-                                                    (bangla)</label>
-                                                <input type="text"
-                                                    value
-                                                    name="name_bn"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Father
-                                                    Name</label>
-                                                <input type="text"
-                                                    value
-                                                    name="father_name"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Husband
-                                                    Name</label>
-                                                <input type="text"
-                                                    value
-                                                    name="husband_name"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Education</label>
-                                                <input type="text"
-                                                    value
-                                                    name="education"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Education
-                                                    Class</label>
-                                                <input type="text"
-                                                    value
-                                                    name="education_class"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Date
-                                                    Of Birth</label>
-                                                <input type="date"
-                                                    value
-                                                    name="date_of_birth"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Address</label>
-                                                <input type="text"
-                                                    value
-                                                    name="address"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Word
-                                                    No</label>
-                                                <input type="number"
-                                                    value
-                                                    name="word_no"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Holding
-                                                    No</label>
-                                                <input type="number"
-                                                    value
-                                                    name="holding_no"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-2 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Flat
-                                                    No </label>
-                                                <input type="number"
-                                                    value
-                                                    name="flat_no"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-3 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Email</label>
-                                                <input type="email"
-                                                    value
-                                                    name="email"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-3 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Number</label>
-                                                <input type="number"
-                                                    value
-                                                    name="number"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-3 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Nid
-                                                    Nbumber</label>
-                                                <input type="number"
-                                                    value
-                                                    name="nid_nbumber"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <div class="mb-3 position-relative"
-                                                id="datepicker1">
-                                                <label class="form-label">Birth
-                                                    Certificate</label>
-                                                <input type="number"
-                                                    value
-                                                    name="birth_certificate"
-                                                    class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <label class="form-label">Status</label>
-                                            <select name="status"
-                                                class="form-control" id>
-                                                <option value="1">Active</option>
-                                                <option value="0">Pending</option>
-                                            </select>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাসপোর্ট নং (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="passport"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
                                         </div>
                                     </div>
-                                    <br>
-                                    <div class="col-lg-12">
-                                        <button type="submit"
-                                            class="btn btn-primary">Apply</button>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control" name="name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    নাম (ইংরেজিতে)</b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
                                     </div>
 
-                                </form> <!-- end tab-content-->
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পিতার নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="fathers_name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পিতার নাম (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="fathers_name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
 
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মাতার নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mothers_name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মাতার নাম (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mothers_name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    লিঙ্গ <span
+                                                        class="text-danger">*</span>
+                                                </b> &nbsp; </label>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox1"
+                                                    value="পুরুষ">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox1">পুরুষ</label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox2"
+                                                    value="মহিলা">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox2">মহিলা
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox3"
+                                                    value="অন্যান্য">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox3">
+                                                    অন্যান্য</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    জন্ম তারিখ </b> <span
+                                                    class="text-danger">*</span>
+                                            </label>
+                                            <input type="date"
+                                                class="form-control "
+                                                name="date_of_birth"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পেশা (বাংলায় ) </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="occupation"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ধর্ম <span
+                                                        class="text-danger">*</span></b>
+                                            </label>
+                                            <div class="col-sm-12 col-md-12">
+                                                <select
+                                                    class="custom-select col-12"
+                                                    name="religion">
+                                                    <option value="ইসলাম"> ইসলাম</option>
+                                                    <option value="হিন্দু">হিন্দু</option>
+                                                    <option value="বৌদ্ধ">বৌদ্ধ</option>
+                                                    <option value="খ্রিস্টান">খ্রিস্টান</option>
+                                                    <option value="অন্যান্য">অন্যান্য</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-4">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    বৈবাহিক অবস্থা <span
+                                                        class="text-danger">*</span>
+                                                </b> &nbsp; </label>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="marital_status"
+                                                    type="radio"
+                                                    id="inlineCheckbox1"
+                                                    value="বিবাহিত">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox1">
+                                                    বিবাহিত</label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="marital_status"
+                                                    type="radio"
+                                                    id="inlineCheckbox2"
+                                                    value="অবিবাহিত">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox2">
+                                                    অবিবাহিত </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    শিক্ষাগত যোগ্যতা </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="education"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    বাসিন্দা <span
+                                                        class="text-danger">*</span></b>
+                                            </label>
+                                            <div class="col-sm-12 col-md-12">
+                                                <select
+                                                    class="custom-select col-12"
+                                                    name="citizen_type">
+                                                    <option value="অস্থায়ী">
+                                                        অস্থায়ী</option>
+                                                    <option value="স্থায়ী">
+                                                        স্থায়ী</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>বর্তমান
+                                                ঠিকানা</b> </p> </span>
+                                    <hr><br>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_locality"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_locality_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর(বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_road"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর (ইংরেজিতে)
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_road_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং(বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="present_ward" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="present_ward_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_post_office"
+                                                min="0" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_post_office_en"
+                                                min="0" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_thana" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_thana_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>স্থায়ী
+                                                ঠিকানা</b> </p> </span>
+                                    <p
+                                        style="font-size:15px; font-weight:normal;padding-top:10px;"
+                                        class="text-center"> <input
+                                            type="checkbox" name="passing_value"
+                                            onclick="autofill(this.form)">
+                                        ঠিকানা একই হলে টিক দিন</p>
+                                    <hr><br>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_locality"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_locality_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর(বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_road"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর (ইংরেজিতে)
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_road_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং(বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="permanent_ward" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="permanent_ward_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_post_office"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_post_office_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_thana"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_thana_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>যোগাযোগের
+                                                ঠিকানা</b> </p> </span>
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মোবাইল নং<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mobile_no"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ইমেইল (যদি থাকে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="email"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    সংযুক্তি যদি থাকে ( ইংরেজিতে
+                                                    ) </b> </label>
+
+                                            <textarea name="attachment_en" id
+                                                cols="4" rows="4"
+                                                placeholder="Examples: Freedom fighter children, widows, tribals ..... etc."
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    সংযুক্তি যদি থাকে ( বাংলায় )
+                                                    <span class="text-danger">*</span></b>
+                                            </label>
+
+                                            <textarea name="attachment" id
+                                                placeholder="উদাহরন: মুক্তিযোদ্ধা সন্তান, বিধবা, উপজাতি .....ইত্যাদি"
+                                                cols="4" rows="4"
+                                                class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-success"
+                                        type="submit">দাখিল করুন</button>
+
+                                </form>
                             </div> <!-- end card-body -->
                         </div> <!-- end card-->
                     </div> <!-- end col -->
