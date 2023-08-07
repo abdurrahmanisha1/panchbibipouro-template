@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- fav icon -->
+        <link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+        <!-- bootstarp -->
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+        <!-- animate.css file -->
+        <link rel="stylesheet" href="css/vendors/animate.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="css/vendors/swiper.min.css">
+        <!-- fontAwesome -->
+        <link rel="stylesheet" href="css/vendors/all.min.css">
+        <!-- Splitting -->
+        <link rel="stylesheet" href="css/vendors/splitting.css">
+        <!-- Font Family -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900">
+        <!-- styles-LTR -->
+        <link rel="stylesheet" href="css/styles-ltr.css">
+        <title>panchbibipouro</title>
+    </head>
+
+    <body class=" overlay-is-linear-gradient ">
+        <!--Start Page Header-->
+        <header class="page-header menu-on-end " id="page-header">
+            <!--start navbar-->
+            <div class="container">
+                <nav class="main-navbar " id="main-nav">
+                    <a class="navbar-brand " href="#">
+                        <img class="brand-logo light-logo img-fluid "
+                            src="assets/images/logo/logo2.png" alt />
+                        <!-- <img class="brand-logo dark-logo img-fluid " src="assets/images/logo/logo-dark.png" alt="" /> -->
+                    </a>
+                    <div class="menu-toggler-btn"><span></span><span></span><span></span></div>
+                    <div class=" navbar-menu-wraper  " id="navbar-menu-wraper">
+                        <ul class="navbar-nav  mobile-menu ">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">হোম</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">সম্পর্কিত</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">হোল্ডিংধারী
+                                    / দখলদার</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " href="index.html">স্বেচ্ছাসেবী</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">ব্লগ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">যোগাযোগ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="header-cta  ma-btn-primary"
+                        style="margin-right: 5px;"
+                        href="#0">
+                        প্রোফাইল
+                    </a>
+                    <a class="header-cta  ma-btn-primary"
+                        style="background: red; color: white;" href="#0">
+                        <!-- অভিযোগ -->
+                        Apply
+                    </a>
+                </nav>
+            </div>
+            <!--End navbar-->
+        </header>
+        <!--End Page Header-->
+
+        <!-- Start  hero Section-->
+        <section class="d-flex align-items-center page-hero inner-page-hero "
+            id="page-hero">
+            <div class="overlay-photo-image-bg "></div>
+            <div class="overlay-color"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 hero-text-area">
+                        <h1 class="hero-title words chars splitting"
+                            data-splitting
+                            style="--word-total: 2; --char-total: 9;">
+                            Apply form
+                        </h1>
+                        <nav aria-label="breadcrumb ">
+                            <ul class="breadcrumb wow fadeInUp"
+                                data-wow-delay="1s"
+                                style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                                <li class="breadcrumb-item">
+                                    <a
+                                        class href="#0">
+                                        <i
+                                            class="fas fa-home icon "></i>home
+                                        //
+                                    </a>
+                                </li>
+                                <li class="active">Apply</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  hero Section-->
+
+        <!-- start  apply form Section-->
+        <section class="apply-form mega-section">
+            <div class="container">
+                <style>
+                    label{
+                        /* font-weight: bold; */
+                        margin-bottom: 10px;
+                    }
+                    form .row{
+                        margin-top: 20px;
+                    }
+                </style>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class>Registation</h3>
+                            </div>
+                            <div class="card-body">
+                                
+                                <form
+                                    action="https://panchbibipouro.com/citizen_application"
+                                    method="POST" enctype="multipart/form-data">
+                                    <input type="hidden" name="_token"
+                                        value="ZUDGWDzo3HXIechRxIfKz5gg0NF13M7zWuJc4Ilv">
+                                    <div class="row">
+                                        <div class="form-group col-md-8">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ছবি <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="file"
+                                                class="form-control"
+                                                name="photo"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder="Enter photo"
+                                                required>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    হোল্ডিং নং </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="holding_no"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    এন আই ডি (ইংরেজিতে) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control" name="nid"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাসপোর্ট নং (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="passport"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control" name="name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    নাম (ইংরেজিতে)</b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পিতার নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="fathers_name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পিতার নাম (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="fathers_name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মাতার নাম (বাংলায় ) <span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mothers_name"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মাতার নাম (ইংরেজিতে)</b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mothers_name_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    লিঙ্গ <span
+                                                        class="text-danger">*</span>
+                                                </b> &nbsp; </label>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox1"
+                                                    value="পুরুষ">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox1">পুরুষ</label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox2"
+                                                    value="মহিলা">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox2">মহিলা
+                                                </label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="sex" type="radio"
+                                                    id="inlineCheckbox3"
+                                                    value="অন্যান্য">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox3">
+                                                    অন্যান্য</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    জন্ম তারিখ </b> <span
+                                                    class="text-danger">*</span>
+                                            </label>
+                                            <input type="date"
+                                                class="form-control "
+                                                name="date_of_birth"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পেশা (বাংলায় ) </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="occupation"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ধর্ম <span
+                                                        class="text-danger">*</span></b>
+                                            </label>
+                                            <div class="col-sm-12 col-md-12">
+                                                <select
+                                                    class="custom-select col-12"
+                                                    name="religion">
+                                                    <option value="ইসলাম"> ইসলাম</option>
+                                                    <option value="হিন্দু">হিন্দু</option>
+                                                    <option value="বৌদ্ধ">বৌদ্ধ</option>
+                                                    <option value="খ্রিস্টান">খ্রিস্টান</option>
+                                                    <option value="অন্যান্য">অন্যান্য</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-4">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    বৈবাহিক অবস্থা <span
+                                                        class="text-danger">*</span>
+                                                </b> &nbsp; </label>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="marital_status"
+                                                    type="radio"
+                                                    id="inlineCheckbox1"
+                                                    value="বিবাহিত">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox1">
+                                                    বিবাহিত</label>
+                                            </div>
+                                            <div
+                                                class="form-check form-check-inline">
+                                                <input class="form-check-input"
+                                                    name="marital_status"
+                                                    type="radio"
+                                                    id="inlineCheckbox2"
+                                                    value="অবিবাহিত">
+                                                <label class="form-check-label"
+                                                    for="inlineCheckbox2">
+                                                    অবিবাহিত </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    শিক্ষাগত যোগ্যতা </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="education"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    বাসিন্দা <span
+                                                        class="text-danger">*</span></b>
+                                            </label>
+                                            <div class="col-sm-12 col-md-12">
+                                                <select
+                                                    class="custom-select col-12"
+                                                    name="citizen_type">
+                                                    <option value="অস্থায়ী">
+                                                        অস্থায়ী</option>
+                                                    <option value="স্থায়ী">
+                                                        স্থায়ী</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>বর্তমান
+                                                ঠিকানা</b> </p> </span>
+                                    <hr><br>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_locality"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_locality_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর(বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_road"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর (ইংরেজিতে)
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_road_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং(বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="present_ward" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="present_ward_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_post_office"
+                                                min="0" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_post_office_en"
+                                                min="0" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_thana" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="present_thana_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>স্থায়ী
+                                                ঠিকানা</b> </p> </span>
+                                    <p
+                                        style="font-size:15px; font-weight:normal;padding-top:10px;"
+                                        class="text-center"> <input
+                                            type="checkbox" name="passing_value"
+                                            onclick="autofill(this.form)">
+                                        ঠিকানা একই হলে টিক দিন</p>
+                                    <hr><br>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_locality"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পাড়া/মহল্লা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_locality_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর(বাংলায়) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_road"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    রোড/ব্লক/সেক্টর (ইংরেজিতে)
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_road_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং(বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="permanent_ward" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ওয়ার্ড নং (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="number"
+                                                class="form-control"
+                                                name="permanent_ward_en" min="0"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_post_office"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    পোষ্ট অফিস (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_post_office_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (বাংলায়)<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_thana"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    থানা (ইংরেজিতে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="permanent_thana_en"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <span> <p class="text-center"
+                                            style="color: #543356"> <b>যোগাযোগের
+                                                ঠিকানা</b> </p> </span>
+                                    <hr>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    মোবাইল নং<span
+                                                        class="text-danger">*</span>
+                                                </b> </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="mobile_no"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder required>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    ইমেইল (যদি থাকে) </b>
+                                            </label>
+                                            <input type="text"
+                                                class="form-control"
+                                                name="email"
+                                                id="exampleInputEmail1"
+                                                aria-describedby="emailHelp"
+                                                placeholder>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    সংযুক্তি যদি থাকে ( ইংরেজিতে
+                                                    ) </b> </label>
+
+                                            <textarea name="attachment_en" id
+                                                cols="4" rows="4"
+                                                placeholder="Examples: Freedom fighter children, widows, tribals ..... etc."
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="exampleInputEmail1"> <b>
+                                                    সংযুক্তি যদি থাকে ( বাংলায় )
+                                                    <span class="text-danger">*</span></b>
+                                            </label>
+
+                                            <textarea name="attachment" id
+                                                placeholder="উদাহরন: মুক্তিযোদ্ধা সন্তান, বিধবা, উপজাতি .....ইত্যাদি"
+                                                cols="4" rows="4"
+                                                class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-success"
+                                        type="submit">দাখিল করুন</button>
+
+                                </form>
+                            </div> <!-- end card-body -->
+                        </div> <!-- end card-->
+                    </div> <!-- end col -->
+                </div>
+            </div>
+        </section>
+        <!-- End  apply form Section-->
+
+        <!-- Start  page-footer Section-->
+        <footer class="page-footer dark-color-footer" id="page-footer">
+            <div class="container">
+                <div class="row footer-cols">
+                    <div
+                        class="col-12 col-md-8 col-lg-4  footer-col wow fadeInUp "
+                        data-wow-delay="0.3s">
+                        <h6 class=" footer-col-title  ">About track</h6>
+                        <div class="footer-col-content-wrapper">
+                            <p class="footer-text-about-us ">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing
+                                elit.Voluptatibus facere modi possimus
+                                dignissimos,
+                                aliquam nobis eaque? Voluptatem magnam quisquam
+                                rem.
+                            </p>
+                            <div class="social-icons">
+                                <div class="sc-wraper dir-row sc-size-32">
+                                    <ul class="sc-list">
+                                        <li class="sc-item" title="Facebook"><a
+                                                class="sc-link"
+                                                href="#0"><i
+                                                    class="fab fa-facebook-f sc-icon"></i></a></li>
+                                        <li class="sc-item" title="youtube"><a
+                                                class="sc-link"
+                                                href="#0"><i
+                                                    class="fab fa-youtube sc-icon"></i></a></li>
+                                        <li class="sc-item" title="instagram"><a
+                                                class="sc-link"
+                                                href="#0"><i
+                                                    class="fab fa-instagram sc-icon"></i></a></li>
+                                        <li class="sc-item" title="twitter"><a
+                                                class="sc-link"
+                                                href="#0"><i
+                                                    class="fab fa-twitter sc-icon"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-2  footer-col wow fadeInUp "
+                        data-wow-delay="0.5s">
+                        <h6 class=" footer-col-title    ">useful links</h6>
+                        <div class="footer-col-content-wrapper">
+                            <ul class="footer-menu ">
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">Google</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">Dribbble</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">linkedIn</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">Wikipiddia</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 col-lg-2 footer-col wow fadeInUp "
+                        data-wow-delay=".7s">
+                        <h6 class=" footer-col-title    ">Resources</h6>
+                        <div class="footer-col-content-wrapper">
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">support</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">dashboard</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">drivers</a></li>
+                                <li class="footer-menu-item"><a
+                                        class="footer-menu-link"
+                                        href="#0">projects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-md-8   col-lg-4 footer-col wow fadeInUp "
+                        data-wow-delay=".9s">
+                        <h6 class=" footer-col-title    ">contact information</h6>
+                        <div class="footer-col-content-wrapper">
+                            <div class="contact-info-card"><i
+                                    class="fas fa-envelope icon"></i><a
+                                    class="text-lowercase  info"
+                                    href="mailto:example@support.com">example@support.com</a></div>
+                            <div class="contact-info-card"><i
+                                    class="fas fa-globe-africa icon"></i><a
+                                    class="text-lowercase  info"
+                                    href="#0">www.panchbibipouro.com</a></div>
+                            <div class="contact-info-card"><i
+                                    class="fas fa-map-marker-alt icon"></i><span
+                                    class="text-lowercase  info">Panchbibi
+                                    Municipality, Joypurhat</span></div>
+                            <div class="contact-info-card"><i
+                                    class="fas fa-mobile-alt icon"></i><a
+                                    class="info"
+                                    href="tel:+8801736264465">+8801736264465
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrights ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p class="creadits">
+
+                                &copy; 2023
+                                Created by:
+
+                                <a class="link" href="#">ari Team</a>
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="terms-links"><a href="#0">Terms of Use
+                                </a>
+                                | <a href="#0">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End  page-footer Section-->
+        <!-- Start loading-screen Component-->
+        <div class="loading-screen" id="loading-screen">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <!-- End loading-screen Component-->
+        <!-- Start back-to-top Component-->
+        <div class="back-to-top" id="back-to-top"><i
+                class="fas fa-arrow-up icon"></i></div>
+        <!-- End back-to-top Component-->
+
+        <!--     JQuery     -->
+        <script src="js/vendors/jquery-3.6.1.min.js"></script>
+        <!--     bootstrap     -->
+        <script src="js/vendors/bootstrap.bundle.min.js"></script>
+        <!--     fancybox     -->
+        <script src="js/vendors/jquery.fancybox.min.js"></script>
+        <!--     countTo     -->
+        <script src="js/vendors/jquery.countTo.js"></script>
+        <!--     wow     -->
+        <script src="js/vendors/wow.min.js"></script>
+        <!--     swiper     -->
+        <script src="js/vendors/swiper.min.js"></script>
+        <!--     isotope     -->
+        <script src="js/vendors/isotope-min.js"></script>
+        <!--     Splitting     -->
+        <script src="js/vendors/splitting.min.js"></script>
+        <!--     main     -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
