@@ -1,448 +1,607 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- fav icon -->
-  <link rel="icon" href="assets/images/fav-icon/fav-icon.png">
-  <!-- bootstarp -->
-  <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
-  <!-- Fancybox -->
-  <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
-  <!-- animate.css file -->
-  <link rel="stylesheet" href="css/vendors/animate.css">
-  <!-- Swiper -->
-  <link rel="stylesheet" href="css/vendors/swiper.min.css">
-  <!-- fontAwesome -->
-  <link rel="stylesheet" href="css/vendors/all.min.css">
-  <!-- Splitting -->
-  <link rel="stylesheet" href="css/vendors/splitting.css">
-  <!-- Font Family -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900">
-  <!-- styles-LTR -->
-  <link rel="stylesheet" href="css/styles-ltr.css">
-  <title>panchbibipouro</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- fav icon -->
+    <link rel="icon" href="assets/images/fav-icon/fav-icon.png">
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="css/vendors/animate.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/vendors/swiper.min.css">
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/vendors/all.min.css">
+    <!-- Splitting -->
+    <link rel="stylesheet" href="css/vendors/splitting.css">
+    <!-- Font Family -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900">
+    <!-- styles-LTR -->
+    <link rel="stylesheet" href="css/styles-ltr.css">
+    <title>panchbibipouro</title>
+  </head>
 
-<body class=" overlay-is-linear-gradient ">
-  <!--Start Page Header-->
-  <header class="page-header menu-on-end " id="page-header">
-    <!--start navbar-->
-    <div class="container">
-      <nav class="main-navbar " id="main-nav">
-        <a class="navbar-brand " href="#">
-          <img class="brand-logo light-logo img-fluid " src="assets/images/logo/logo2.png" alt />
-          <!-- <img class="brand-logo dark-logo img-fluid " src="assets/images/logo/logo-dark.png" alt="" /> -->
-        </a>
-        <div class="menu-toggler-btn"><span></span><span></span><span></span></div>
-        <div class=" navbar-menu-wraper  " id="navbar-menu-wraper">
-          <ul class="navbar-nav  mobile-menu ">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">হোম</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="about.html">সম্পর্কিত</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="landlord.html">হোল্ডিংধারী / দখলদার</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  " href="staff.html">স্বেচ্ছাসেবী</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="blog.html">ব্লগ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="contact.html">যোগাযোগ</a>
-            </li>
-          </ul>
-        </div>
-        <a class="header-cta  ma-btn-primary" style="margin-right: 5px;" href="profile.html">
-          প্রোফাইল
-        </a>
-        <a href="apply.html" class="header-cta  ma-btn-primary" style="background: red; color: white;">
-          <!-- অভিযোগ -->
-          Apply
-        </a>
-      </nav>
-    </div>
-    <!--End navbar-->
-  </header>
-  <!--End Page Header-->
-
-  <!-- Start  Page hero-->
-  <section class="d-flex align-items-center page-hero inner-page-hero " id="page-hero">
-    <div class="overlay-photo-image-bg "></div>
-    <div class="overlay-color"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 hero-text-area">
-          <h1 class="hero-title words chars splitting" data-splitting="" style="--word-total: 2; --char-total: 7;">
-            BLOG
-          </h1>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End  Page hero-->
-
-  <!-- Start  our-team Section-->
-  <section class="our-team mega-section d-flex align-items-center section-bg-shade" id="our-team">
-    <div class="container">
-      <div class="section-heading center-heading">
-        <h2 class="section-title wow" data-splitting="words">
-          হোল্ডিংধারীদের অবস্থা
-        </h2>
-        <div class="line line-solid-main-color wow fadeIn" data-wow-delay="1s"></div>
-      </div>
-      <div class="row">
-        <!--holding Team Member-->
-        <div class="col-12 col-md-8  col-lg-4 mx-md-auto ">
-          <div class="tm-member-card   wow   fadeInUp" data-wow-delay="0.2s">
-            <div class="tm-image ">
-              <div class="overlay overlay-color"> </div><img class="img-fluid "
-                src="https://panchbibipouro.com/image/team/1760143249648334.jpg" alt="Team Member 1">
-              <div class="tm-desc">
-                <div class="sc-wraper dir-col sc-size-40">
-                  <ul class="sc-list">
-                    <li class="sc-item" title="Facebook"><a class="sc-link" href="#0"><i
-                          class="fab fa-facebook-f sc-icon"></i></a></li>
-                    <li class="sc-item" title="youtube"><a class="sc-link" href="#0"><i
-                          class="fab fa-youtube sc-icon"></i></a></li>
-                    <li class="sc-item" title="instagram"><a class="sc-link" href="#0"><i
-                          class="fab fa-instagram sc-icon"></i></a></li>
-                    <li class="sc-item" title="twitter"><a class="sc-link" href="#0"><i
-                          class="fab fa-twitter sc-icon"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="tm-details">
-              <h6 class="tm-name">আব বকর মোঃ শফিকুল ইসলাম</h6>
-              <span class="tm-role">
-                সেরা হোল্ডিংধারী/ দখলদার
-              </span>
-            </div>
-          </div>
-        </div>
-        <!--holding Team Member-->
-        <div class="col-12 col-md-8  col-lg-4 mx-md-auto ">
-          <div class="tm-member-card   wow   fadeInUp" data-wow-delay="0.2s">
-            <div class="tm-image ">
-              <div class="overlay overlay-color"> </div><img class="img-fluid "
-                src="https://panchbibipouro.com/image/team/1759162362596569.png" alt="Team Member 1">
-              <div class="tm-desc">
-                <div class="sc-wraper dir-col sc-size-40">
-                  <ul class="sc-list">
-                    <li class="sc-item" title="Facebook"><a class="sc-link" href="#0"><i
-                          class="fab fa-facebook-f sc-icon"></i></a></li>
-                    <li class="sc-item" title="youtube"><a class="sc-link" href="#0"><i
-                          class="fab fa-youtube sc-icon"></i></a></li>
-                    <li class="sc-item" title="instagram"><a class="sc-link" href="#0"><i
-                          class="fab fa-instagram sc-icon"></i></a></li>
-                    <li class="sc-item" title="twitter"><a class="sc-link" href="#0"><i
-                          class="fab fa-twitter sc-icon"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="tm-details">
-              <h6 class="tm-name">ইয়াহিন আরাফাত (রিফাত)</h6>
-              <span class="tm-role">
-                সেরা স্বেচ্ছাসেবক
-              </span>
-            </div>
-          </div>
-        </div>
-        <!--holding Team Member-->
-        <div class="col-12 col-md-8  col-lg-4 mx-md-auto ">
-          <div class="tm-member-card   wow   fadeInUp" data-wow-delay="0.2s">
-            <div class="tm-image ">
-              <div class="overlay overlay-color"> </div><img class="img-fluid "
-                src="https://panchbibipouro.com/image/team/1759142954409941.png" alt="Team Member 1">
-              <div class="tm-desc">
-                <div class="sc-wraper dir-col sc-size-40">
-                  <ul class="sc-list">
-                    <li class="sc-item" title="Facebook"><a class="sc-link" href="#0"><i
-                          class="fab fa-facebook-f sc-icon"></i></a></li>
-                    <li class="sc-item" title="youtube"><a class="sc-link" href="#0"><i
-                          class="fab fa-youtube sc-icon"></i></a></li>
-                    <li class="sc-item" title="instagram"><a class="sc-link" href="#0"><i
-                          class="fab fa-instagram sc-icon"></i></a></li>
-                    <li class="sc-item" title="twitter"><a class="sc-link" href="#0"><i
-                          class="fab fa-twitter sc-icon"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="tm-details">
-              <h6 class="tm-name">মোঃ আব্দুল মান্নান</h6>
-              <span class="tm-role">
-                সেরা পরিছন্নকর্মী
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--Start teamsee-more-area-->
-      <div class="see-more-area   wow fadeInUp" data-wow-delay="0.8s">
-        <a class=" ma-btn-primary" href="#0">
-          see all team
-          members
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- End  our-team Section-->
-
-
-  <!-- Start  testimonials-2-col-->
-  <section class="testimonials testimonials-2-col d-flex align-items-center mega-section  " id="testimonials">
-    <div class="container">
-      <div class="section-heading center-heading">
-        <h2 class="section-title wow" data-splitting="words">testimonials</h2>
-        <p class="section-subtitle wow fadeInUp" data-wow-delay=".5s">Lorem
-          ipsum dolor sit amet consectetur adipisicing
-          elit. Sunt, architecto cupiditate odio rerum est</p>
-        <div class="line line-solid-main-color wow fadeIn" data-wow-delay="1s"></div>
-      </div>
-      <div class="swiper-container  wow fadeInUp  " data-wow-delay="0.4s">
-        <div class="swiper-wrapper">
-          <!--First Slide-->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="customer-testimonial"><i class="fas fa-quote-left   icon"></i>
-                <div class="content">
-                  <p class="testimonial-text ">
-                    ipsum
-                    dolor sit amet consectetur adipisicing elit. Quod, id
-                    sequi aut qui est
-                    ab,
-                    corporis quis maiores reiciendis explicabo odio tenetur
-                    nulla sint vel.
-                  </p>
-                </div>
-              </div>
-              <div class="customer-info "><img class="img-fluid " src="assets/images/testimonials/1.jpg"
-                  alt="First Slide ">
-                <div class="customer-details">
-                  <p class="customer-name">mhmd Amin</p>
-                  <p class="customer-role">manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Second Slide-->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="customer-testimonial"><i class="fas fa-quote-left    icon "></i>
-                <div class="content">
-                  <p class="testimonial-text ">
-                    ipsum
-                    dolor sit amet consectetur adipisicing elit. Quod, id
-                    sequi aut qui est
-                    ab,
-                    corporis quis maiores reiciendis explicabo odio tenetur
-                    nulla sint vel.
-                  </p>
-                </div>
-              </div>
-              <div class="customer-info "><img class="img-fluid " src="assets/images/testimonials/2.jpg"
-                  alt="First Slide ">
-                <div class="customer-details">
-                  <p class="customer-name">yusuf Amin</p>
-                  <p class="customer-role">manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Third Slide-->
-          <div class="swiper-slide">
-            <div class="testimonial-content">
-              <div class="customer-testimonial"><i class="fas fa-quote-left   icon"></i>
-                <div class="content">
-                  <p class="testimonial-text ">
-                    ipsum
-                    dolor sit amet consectetur adipisicing elit. Quod, id
-                    sequi aut qui est
-                    ab,
-                    corporis quis maiores reiciendis explicabo odio tenetur
-                    nulla sint vel.
-                  </p>
-                </div>
-              </div>
-              <div class="customer-info "><img class="img-fluid " src="assets/images/testimonials/3.jpg"
-                  alt="First Slide ">
-                <div class="customer-details">
-                  <p class="customer-name">mostafa Amin</p>
-                  <p class="customer-role">manager</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--navigation buttons-->
-        <div class="swiper-button-prev">
-          <div class="left-arrow"><i class="fas fa-arrow-left icon "></i>
-          </div>
-        </div>
-        <div class="swiper-button-next">
-          <div class="right-arrow"><i class="fas fa-arrow-right icon "></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End  testimonials-2-col-->
-
-
-  <!-- Start  take-action Section-->
-  <section class="take-action elf-section " id="take-action">
-    <div class="cta-wrapper">
+  <body class=" overlay-is-linear-gradient ">
+    <!--Start Page Header-->
+    <header class="page-header menu-on-end " id="page-header">
+      <!--start navbar-->
       <div class="container">
-        <div class="row  d-flex align-items-center ">
-          <div class="col-12 col-lg-6 ">
-            <div class="section-heading mb-lg-0">
-              <h2 class="section-title   wow" data-splitting="words">subscribe
-                to our newsletter</h2>
-              <p class="section-subtitle wow fadeInUp" data-wow-delay="0.6s">Stay
-                always informed with our special
-                offers,tips, and more.</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 wow fadeInUp  " data-wow-delay="0.4s">
-            <div class="form-wrapper">
-              <form class="email-capture-form">
-                <input class="captured-email " id="captured-email" type="email" placeholder="Enter Your Email" required>
-                <button class="  subscripe-btn abs" type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End  take-action Section-->
-  <!-- Start  page-footer Section-->
-  <footer class="page-footer dark-color-footer" id="page-footer">
-    <div class="container">
-      <div class="row footer-cols">
-        <div class="col-12 col-md-8 col-lg-4  footer-col wow fadeInUp " data-wow-delay="0.3s">
-          <h6 class=" footer-col-title  ">About track</h6>
-          <div class="footer-col-content-wrapper">
-            <p class="footer-text-about-us ">
-              Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit.Voluptatibus facere modi possimus dignissimos,
-              aliquam nobis eaque? Voluptatem magnam quisquam rem.
-            </p>
-            <div class="social-icons">
-              <div class="sc-wraper dir-row sc-size-32">
-                <ul class="sc-list">
-                  <li class="sc-item" title="Facebook"><a class="sc-link" href="#0"><i
-                        class="fab fa-facebook-f sc-icon"></i></a></li>
-                  <li class="sc-item" title="youtube"><a class="sc-link" href="#0"><i
-                        class="fab fa-youtube sc-icon"></i></a></li>
-                  <li class="sc-item" title="instagram"><a class="sc-link" href="#0"><i
-                        class="fab fa-instagram sc-icon"></i></a></li>
-                  <li class="sc-item" title="twitter"><a class="sc-link" href="#0"><i
-                        class="fab fa-twitter sc-icon"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-2  footer-col wow fadeInUp " data-wow-delay="0.5s">
-          <h6 class=" footer-col-title    ">useful links</h6>
-          <div class="footer-col-content-wrapper">
-            <ul class="footer-menu ">
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">Google</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">Dribbble</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">linkedIn</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">Wikipiddia</a></li>
+        <nav class="main-navbar " id="main-nav">
+          <a class="navbar-brand " href="#">
+            <img class="brand-logo light-logo img-fluid "
+              src="assets/images/logo/logo2.png" alt />
+            <!-- <img class="brand-logo dark-logo img-fluid " src="assets/images/logo/logo-dark.png" alt="" /> -->
+          </a>
+          <div class="menu-toggler-btn"><span></span><span></span><span></span></div>
+          <div class=" navbar-menu-wraper  " id="navbar-menu-wraper">
+            <ul class="navbar-nav  mobile-menu ">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">হোম</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.html">সম্পর্কিত</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="landlord.html">হোল্ডিংধারী / দখলদার</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  " href="staff.html">স্বেচ্ছাসেবী</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="blog.html">ব্লগ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html">যোগাযোগ</a>
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-2 footer-col wow fadeInUp " data-wow-delay=".7s">
-          <h6 class=" footer-col-title    ">Resources</h6>
-          <div class="footer-col-content-wrapper">
-            <ul class="footer-menu">
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">support</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">dashboard</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">drivers</a></li>
-              <li class="footer-menu-item"><a class="footer-menu-link" href="#0">projects</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-md-8   col-lg-4 footer-col wow fadeInUp " data-wow-delay=".9s">
-          <h6 class=" footer-col-title    ">contact information</h6>
-          <div class="footer-col-content-wrapper">
-            <div class="contact-info-card"><i class="fas fa-envelope icon"></i><a class="text-lowercase  info"
-                href="mailto:example@support.com">example@support.com</a></div>
-            <div class="contact-info-card"><i class="fas fa-globe-africa icon"></i><a class="text-lowercase  info"
-                href="#0">www.panchbibipouro.com</a></div>
-            <div class="contact-info-card"><i class="fas fa-map-marker-alt icon"></i><span
-                class="text-lowercase  info">Panchbibi Municipality, Joypurhat</span></div>
-            <div class="contact-info-card"><i class="fas fa-mobile-alt icon"></i><a class="info"
-                href="tel:+8801736264465">+8801736264465 </a></div>
-          </div>
-        </div>
+          <a class="header-cta  ma-btn-primary" style="margin-right: 5px;"
+            href="profile.html">
+            প্রোফাইল
+          </a>
+          <a href="apply.html" class="header-cta  ma-btn-primary"
+            style="background: red; color: white;">
+            <!-- অভিযোগ -->
+            Apply
+          </a>
+        </nav>
       </div>
-    </div>
-    <div class="copyrights ">
+      <!--End navbar-->
+    </header>
+    <!--End Page Header-->
+
+    <!-- Start  Page hero-->
+    <section class="d-flex align-items-center page-hero inner-page-hero "
+      id="page-hero">
+      <div class="overlay-photo-image-bg "></div>
+      <div class="overlay-color"></div>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="creadits">
-
-              &copy; 2023
-              Created by:
-
-              <a class="link" href="#">ari Team</a>
-            </p>
+          <div class="col-12 hero-text-area">
+            <h1 class="hero-title words chars splitting" data-splitting
+              style="--word-total: 2; --char-total: 7;">
+              BLOG
+            </h1>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="terms-links"><a href="#0">Terms of Use </a>
-              | <a href="#0">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+    <!-- End  Page hero-->
+
+    <!-- Start  blog Section-->
+    <section class="blog blog-home mega-section">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-12 col-lg-8 ">
+            <div class="posts-grid">
+              <div class="row">
+                <div class="col-12 ">
+                  <div class="post-box"><a class="post-link"
+                      href="post-single-featured-image.html">
+                      <div class="post-img-wraper">
+                        <div class="overlay-color"></div><i
+                          class="fas fa-search icon "></i><img class="post-img"
+                          src="assets/images/blog/post-images/1.jpg" alt>
+                      </div></a>
+                    <div class="post-summary">
+                      <div class="post-info"><a class="post-cat" href="#"> <i
+                            class=" fas fa-list-alt icon"></i>cloud</a><span
+                          class="post-date"> <i class=" fas fa-history icon"></i>15/2/2020</span><a
+                          class="post-author" href="#"> <i
+                            class=" fas fa-user icon"></i>Allan Moore</a></div>
+                      <div class="post-text"><a class="post-link"
+                          href="post-single-featured-image.html">
+                          <h2 class="post-title">asking big questions on your
+                            mind?</h2></a>
+                        <p class="post-excerpt">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit.
+                          Iure nulla dolorem, voluptates molestiae praesentium,
+                          aliquid optio quaerat quis ut cupiditate
+                          necessitatibus,
+                          ex sint facilis at natus ullam expedita? Totam fugit,
+
+                        </p><a class="read-more"
+                          href="post-single-featured-image.html">read more<i
+                            class="fas fa-arrow-right icon "></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 ">
+                  <div class="post-box"><a class="post-link"
+                      href="post-single-featured-image.html">
+                      <div class="post-img-wraper">
+                        <div class="overlay-color"></div><i
+                          class="fas fa-search icon "></i><img class="post-img"
+                          src="assets/images/blog/post-images/2.jpg" alt>
+                      </div></a>
+                    <div class="post-summary">
+                      <div class="post-info"><a class="post-cat" href="#"> <i
+                            class=" fas fa-list-alt icon"></i>design</a><span
+                          class="post-date"> <i class=" fas fa-history icon"></i>15/2/2020</span><a
+                          class="post-author" href="#"><i
+                            class=" fas fa-user icon"></i>mhmd amin</a></div>
+                      <div class="post-text"><a class="post-link"
+                          href="post-single-featured-image.html">
+                          <h2 class="post-title">world want a new kind of super
+                            heros</h2></a>
+                        <p class="post-excerpt">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit.
+                          Iure nulla dolorem, voluptates molestiae praesentium,
+                          aliquid optio quaerat quis ut cupiditate
+                          necessitatibus,
+                          ex sint facilis at natus ullam expedita? Totam fugit,
+
+                        </p><a class="read-more"
+                          href="post-single-featured-image.html">read more<i
+                            class="fas fa-arrow-right icon "></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 ">
+                  <div class="post-box"><a class="post-link"
+                      href="post-single-featured-image.html">
+                      <div class="post-img-wraper">
+                        <div class="overlay-color"></div><i
+                          class="fas fa-search icon "></i><img class="post-img"
+                          src="assets/images/blog/post-images/3.jpg" alt>
+                      </div></a>
+                    <div class="post-summary">
+                      <div class="post-info"><a class="post-cat" href="#"> <i
+                            class=" fas fa-list-alt icon"></i>life style</a><span
+                          class="post-date"> <i class=" fas fa-history icon"></i>30/12/2022</span><a
+                          class="post-author" href="#"><i
+                            class=" fas fa-user icon"></i>yusuf amin</a></div>
+                      <div class="post-text"><a class="post-link"
+                          href="post-single-featured-image.html">
+                          <h2 class="post-title">helping others can boost you
+                            happiness</h2></a>
+                        <p class="post-excerpt">
+                          Lorem ipsum dolor sit, amet consectetur adipisicing
+                          elit.
+                          Iure nulla dolorem, voluptates molestiae praesentium,
+                          aliquid optio quaerat quis ut cupiditate
+                          necessitatibus,
+                          ex sint facilis at natus ullam expedita? Totam fugit,
+
+                        </p><a class="read-more"
+                          href="post-single-featured-image.html">read more<i
+                            class="fas fa-arrow-right icon "></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--Start Posts pagination-->
+                <div class="col-12">
+                  <nav class="posts-pagination">
+                    <ul class="pagination justify-content-center">
+                      <li class="posts-page-item deactive-posts-page-item"><a
+                          class="posts-page-link " href="#"
+                          title="Previous Post"><i
+                            class="fas fa-arrow-left icon "></i></a></li>
+                      <li class="posts-page-item active"><a
+                          class="posts-page-link " href="#">1</a></li>
+                      <li class="posts-page-item"><a class="posts-page-link"
+                          href="#">2</a></li>
+                      <li class="posts-page-item"><a class="posts-page-link"
+                          href="#">3</a></li>
+                      <li class="posts-page-item"><a class="posts-page-link"
+                          href="#">4</a></li>
+                      <li class="posts-page-item"><a class="posts-page-link"
+                          href="#">5</a></li>
+                      <li class="posts-page-item"><a class="posts-page-link"
+                          href="#" title="Next Post"><i
+                            class="fas fa-arrow-right icon "></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 ">
+            <div class="blog-sidebar">
+              <!--search box-->
+              <div class="search sidebar-box">
+                <form class="search-form" action="#">
+                  <input class="search-input" type="search" name="seach_form"
+                    placeholder="Search Posts...">
+                  <button class="search-btn" role="submit" type="submit"><i
+                      class="fas fa-search icon"></i></button>
+                </form>
+              </div>
+              <!--categories box-->
+              <div class="cats sidebar-box">
+                <h6 class="sidebar-box-title"> <i class="fas fa-list-alt icon"></i>Categories:</h6>
+                <ul class="sidebar-list cats-list  ">
+                  <li class="cat-item"><a class="cat-link" href="#">design</a><span
+                      class="cat-count">5</span></li>
+                  <li class="cat-item"><a class="cat-link" href="#">development</a><span
+                      class="cat-count">12</span></li>
+                  <li class="cat-item"><a class="cat-link" href="#">SEO</a><span
+                      class="cat-count">35</span></li>
+                  <li class="cat-item"><a class="cat-link" href="#">prototyping</a><span
+                      class="cat-count">17</span></li>
+                  <li class="cat-item"><a class="cat-link" href="#">marketing</a><span
+                      class="cat-count">33</span></li>
+                </ul>
+              </div>
+              <!--Recent posts  -->
+              <div class="recent-posts sidebar-box">
+                <h6 class="sidebar-box-title"> <i class="fas fa-history icon"></i>recent
+                  posts: </h6>
+                <ul class="sidebar-list r-posts-list ">
+                  <li class="r-post-item"><a class="r-post-link" href="#">
+                      <div class="r-post-img-wraper"><img class="r-post-img"
+                          src="assets/images/blog/recent-posts/1.jpg"></div>
+                      <div class="content">
+                        <h6 class="r-post-title">this is the article title</h6><span
+                          class="r-post-date">jun, 15 2020 </span>
+                      </div></a></li>
+                  <li class="r-post-item"><a class="r-post-link" href="#">
+                      <div class="r-post-img-wraper"><img class="r-post-img"
+                          src="assets/images/blog/recent-posts/2.jpg"></div>
+                      <div class="content">
+                        <h6 class="r-post-title">this is the article title</h6><span
+                          class="r-post-date">may, 10 2020 </span>
+                      </div></a></li>
+                  <li class="r-post-item"><a class="r-post-link" href="#">
+                      <div class="r-post-img-wraper"><img class="r-post-img"
+                          src="assets/images/blog/recent-posts/3.jpg"></div>
+                      <div class="content">
+                        <h6 class="r-post-title">this is the article title</h6><span
+                          class="r-post-date">feb, 28 2020 </span>
+                      </div></a></li>
+                  <li class="r-post-item"><a class="r-post-link" href="#">
+                      <div class="r-post-img-wraper"><img class="r-post-img"
+                          src="assets/images/blog/recent-posts/4.jpg"></div>
+                      <div class="content">
+                        <h6 class="r-post-title">this is the article title</h6><span
+                          class="r-post-date">jun, 07 2020 </span>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="tags sidebar-box">
+                <h6 class="sidebar-box-title"> <i class="fas fa-tags icon"></i>tags:</h6>
+                <ul class="sidebar-list tags-list ">
+                  <li class="tag-item"><a class="tag-link" href="#">cloud</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">programming</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">drawing</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">design</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">developing</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">web hosting</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">mega</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">concept</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">services</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">services</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">portfolio</a></li>
+                  <li class="tag-item"><a class="tag-link" href="#">testmonials</a></li>
+                </ul>
+              </div>
+              <div class="follow-us sidebar-box">
+                <h6 class="sidebar-box-title"> <i class="fas fa-heart icon"></i>follow
+                  us on:</h6>
+                <div class="sc-wraper dir-row sc-size-32">
+                  <ul class="sc-list">
+                    <li class="sc-item" title="Facebook"><a class="sc-link"
+                        href="#0"><i class="fab fa-facebook-f sc-icon"></i></a></li>
+                    <li class="sc-item" title="youtube"><a class="sc-link"
+                        href="#0"><i class="fab fa-youtube sc-icon"></i></a></li>
+                    <li class="sc-item" title="instagram"><a class="sc-link"
+                        href="#0"><i class="fab fa-instagram sc-icon"></i></a></li>
+                    <li class="sc-item" title="twitter"><a class="sc-link"
+                        href="#0"><i class="fab fa-twitter sc-icon"></i></a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <!-- End  page-footer Section-->
-  <!-- Start loading-screen Component-->
-  <div class="loading-screen" id="loading-screen">
-    <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-    </div>
-  </div>
-  <!-- End loading-screen Component-->
-  <!-- Start back-to-top Component-->
-  <div class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up icon"></i></div>
-  <!-- End back-to-top Component-->
+    </section>
+    <!-- End  blog Section-->
 
-  <!--     JQuery     -->
-  <script src="js/vendors/jquery-3.6.1.min.js"></script>
-  <!--     bootstrap     -->
-  <script src="js/vendors/bootstrap.bundle.min.js"></script>
-  <!--     fancybox     -->
-  <script src="js/vendors/jquery.fancybox.min.js"></script>
-  <!--     countTo     -->
-  <script src="js/vendors/jquery.countTo.js"></script>
-  <!--     wow     -->
-  <script src="js/vendors/wow.min.js"></script>
-  <!--     swiper     -->
-  <script src="js/vendors/swiper.min.js"></script>
-  <!--     isotope     -->
-  <script src="js/vendors/isotope-min.js"></script>
-  <!--     Splitting     -->
-  <script src="js/vendors/splitting.min.js"></script>
-  <!--     main     -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- Start  testimonials-2-col-->
+    <section
+      class="testimonials testimonials-2-col d-flex align-items-center mega-section  "
+      id="testimonials">
+      <div class="container">
+        <div class="section-heading center-heading">
+          <h2 class="section-title wow" data-splitting="words">testimonials</h2>
+          <p class="section-subtitle wow fadeInUp" data-wow-delay=".5s">Lorem
+            ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt, architecto cupiditate odio rerum est</p>
+          <div class="line line-solid-main-color wow fadeIn" data-wow-delay="1s"></div>
+        </div>
+        <div class="swiper-container  wow fadeInUp  " data-wow-delay="0.4s">
+          <div class="swiper-wrapper">
+            <!--First Slide-->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <div class="customer-testimonial"><i
+                    class="fas fa-quote-left   icon"></i>
+                  <div class="content">
+                    <p class="testimonial-text ">
+                      ipsum
+                      dolor sit amet consectetur adipisicing elit. Quod, id
+                      sequi aut qui est
+                      ab,
+                      corporis quis maiores reiciendis explicabo odio tenetur
+                      nulla sint vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer-info "><img class="img-fluid "
+                    src="assets/images/testimonials/1.jpg"
+                    alt="First Slide ">
+                  <div class="customer-details">
+                    <p class="customer-name">mhmd Amin</p>
+                    <p class="customer-role">manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Second Slide-->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <div class="customer-testimonial"><i
+                    class="fas fa-quote-left    icon "></i>
+                  <div class="content">
+                    <p class="testimonial-text ">
+                      ipsum
+                      dolor sit amet consectetur adipisicing elit. Quod, id
+                      sequi aut qui est
+                      ab,
+                      corporis quis maiores reiciendis explicabo odio tenetur
+                      nulla sint vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer-info "><img class="img-fluid "
+                    src="assets/images/testimonials/2.jpg"
+                    alt="First Slide ">
+                  <div class="customer-details">
+                    <p class="customer-name">yusuf Amin</p>
+                    <p class="customer-role">manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Third Slide-->
+            <div class="swiper-slide">
+              <div class="testimonial-content">
+                <div class="customer-testimonial"><i
+                    class="fas fa-quote-left   icon"></i>
+                  <div class="content">
+                    <p class="testimonial-text ">
+                      ipsum
+                      dolor sit amet consectetur adipisicing elit. Quod, id
+                      sequi aut qui est
+                      ab,
+                      corporis quis maiores reiciendis explicabo odio tenetur
+                      nulla sint vel.
+                    </p>
+                  </div>
+                </div>
+                <div class="customer-info "><img class="img-fluid "
+                    src="assets/images/testimonials/3.jpg"
+                    alt="First Slide ">
+                  <div class="customer-details">
+                    <p class="customer-name">mostafa Amin</p>
+                    <p class="customer-role">manager</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--navigation buttons-->
+          <div class="swiper-button-prev">
+            <div class="left-arrow"><i class="fas fa-arrow-left icon "></i>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <div class="right-arrow"><i class="fas fa-arrow-right icon "></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End  testimonials-2-col-->
+
+    <!-- Start  take-action Section-->
+    <section class="take-action elf-section " id="take-action">
+      <div class="cta-wrapper">
+        <div class="container">
+          <div class="row  d-flex align-items-center ">
+            <div class="col-12 col-lg-6 ">
+              <div class="section-heading mb-lg-0">
+                <h2 class="section-title   wow" data-splitting="words">subscribe
+                  to our newsletter</h2>
+                <p class="section-subtitle wow fadeInUp" data-wow-delay="0.6s">Stay
+                  always informed with our special
+                  offers,tips, and more.</p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 wow fadeInUp  " data-wow-delay="0.4s">
+              <div class="form-wrapper">
+                <form class="email-capture-form">
+                  <input class="captured-email " id="captured-email"
+                    type="email" placeholder="Enter Your Email" required>
+                  <button class="  subscripe-btn abs" type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End  take-action Section-->
+    <!-- Start  page-footer Section-->
+    <footer class="page-footer dark-color-footer" id="page-footer">
+      <div class="container">
+        <div class="row footer-cols">
+          <div class="col-12 col-md-8 col-lg-4  footer-col wow fadeInUp "
+            data-wow-delay="0.3s">
+            <h6 class=" footer-col-title  ">About track</h6>
+            <div class="footer-col-content-wrapper">
+              <p class="footer-text-about-us ">
+                Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit.Voluptatibus facere modi possimus dignissimos,
+                aliquam nobis eaque? Voluptatem magnam quisquam rem.
+              </p>
+              <div class="social-icons">
+                <div class="sc-wraper dir-row sc-size-32">
+                  <ul class="sc-list">
+                    <li class="sc-item" title="Facebook"><a class="sc-link"
+                        href="#0"><i
+                          class="fab fa-facebook-f sc-icon"></i></a></li>
+                    <li class="sc-item" title="youtube"><a class="sc-link"
+                        href="#0"><i
+                          class="fab fa-youtube sc-icon"></i></a></li>
+                    <li class="sc-item" title="instagram"><a class="sc-link"
+                        href="#0"><i
+                          class="fab fa-instagram sc-icon"></i></a></li>
+                    <li class="sc-item" title="twitter"><a class="sc-link"
+                        href="#0"><i
+                          class="fab fa-twitter sc-icon"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2  footer-col wow fadeInUp "
+            data-wow-delay="0.5s">
+            <h6 class=" footer-col-title    ">useful links</h6>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu ">
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">Google</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">Dribbble</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">linkedIn</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">Wikipiddia</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-col wow fadeInUp "
+            data-wow-delay=".7s">
+            <h6 class=" footer-col-title    ">Resources</h6>
+            <div class="footer-col-content-wrapper">
+              <ul class="footer-menu">
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">support</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">dashboard</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">drivers</a></li>
+                <li class="footer-menu-item"><a class="footer-menu-link"
+                    href="#0">projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-8   col-lg-4 footer-col wow fadeInUp "
+            data-wow-delay=".9s">
+            <h6 class=" footer-col-title    ">contact information</h6>
+            <div class="footer-col-content-wrapper">
+              <div class="contact-info-card"><i class="fas fa-envelope icon"></i><a
+                  class="text-lowercase  info"
+                  href="mailto:example@support.com">example@support.com</a></div>
+              <div class="contact-info-card"><i class="fas fa-globe-africa icon"></i><a
+                  class="text-lowercase  info"
+                  href="#0">www.panchbibipouro.com</a></div>
+              <div class="contact-info-card"><i
+                  class="fas fa-map-marker-alt icon"></i><span
+                  class="text-lowercase  info">Panchbibi Municipality, Joypurhat</span></div>
+              <div class="contact-info-card"><i class="fas fa-mobile-alt icon"></i><a
+                  class="info"
+                  href="tel:+8801736264465">+8801736264465 </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights ">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p class="creadits">
+
+                &copy; 2023
+                Created by:
+
+                <a class="link" href="#">ari Team</a>
+              </p>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="terms-links"><a href="#0">Terms of Use </a>
+                | <a href="#0">Privacy Policy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End  page-footer Section-->
+    <!-- Start loading-screen Component-->
+    <div class="loading-screen" id="loading-screen">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+    <!-- End loading-screen Component-->
+    <!-- Start back-to-top Component-->
+    <div class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up icon"></i></div>
+    <!-- End back-to-top Component-->
+
+    <!--     JQuery     -->
+    <script src="js/vendors/jquery-3.6.1.min.js"></script>
+    <!--     bootstrap     -->
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+    <!--     fancybox     -->
+    <script src="js/vendors/jquery.fancybox.min.js"></script>
+    <!--     countTo     -->
+    <script src="js/vendors/jquery.countTo.js"></script>
+    <!--     wow     -->
+    <script src="js/vendors/wow.min.js"></script>
+    <!--     swiper     -->
+    <script src="js/vendors/swiper.min.js"></script>
+    <!--     isotope     -->
+    <script src="js/vendors/isotope-min.js"></script>
+    <!--     Splitting     -->
+    <script src="js/vendors/splitting.min.js"></script>
+    <!--     main     -->
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
